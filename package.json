@@ -1,0 +1,22 @@
+{
+  "name": "inboxguard",
+  "version": "1.2.1",
+  "description": "Official TypeScript/JavaScript SDK for the InboxGuard email deliverability API (SPF, DKIM, DMARC, MTA-STS, TLS-RPT, BIMI, DNS blocklists).",
+  "keywords": ["inboxguard", "email", "deliverability", "dmarc", "spf", "dkim", "blocklist", "mta-sts", "bimi"],
+  "homepage": "https://inboxguard.io/developers",
+  "repository": { "type": "git", "url": "git+https://github.com/movaMedia-Inc/inboxguard-js.git" },
+  "bugs": { "url": "https://github.com/movaMedia-Inc/inboxguard-js/issues", "email": "support@inboxguard.io" },
+  "license": "MIT",
+  "author": "movaMedia, Inc. <support@inboxguard.io>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": { "typescript": "^5.4.0" }
+}
