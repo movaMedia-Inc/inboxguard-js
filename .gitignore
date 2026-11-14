@@ -1,3 +1,6 @@
 node_modules/
 dist/
 *.log
+# Claude Code local settings can hold pasted secrets
+.claude/settings.local.json
+.claude/*.local.*
